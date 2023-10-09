@@ -1,10 +1,33 @@
-<<<<<<< HEAD
-    :root {
-            --nav-bg-color: rgb(63,187,180);;
-            --nav-link-color: #fff;
-            --main-bg-color: #fff;
-            --accent-color: rgb(63,187,180);
+   
+   ::before,
+   ::after {
+       margin: 0;
+       padding: 0;
+       box-sizing: border-box;
+       scroll-behavior: smooth;
+   }
+   html,
+   body {
+    height: 100%;
+}
+   :root {
+            --primary-color: rgb(63,187,180);;
+            --secondary-color: #fff;
+            
         }
+        /* Custom Scrollbar */
+::-webkit-scrollbar {
+    width: 5px;
+  }
+
+  ::-webkit-scrollbar-track {
+    background-color: var(--primary-color);
+  }
+
+  ::-webkit-scrollbar-thumb {
+    border: 8px solid var(--secondary-color);
+    border-radius: 50px;
+  }
 
         td{
             height: 200px;
@@ -12,7 +35,7 @@
             vertical-align: middle;
             border: none;
             font-weight: bold;
-            color: var(--accent-color);
+            color: var(--primary-color);
             font-size: 32px;
             vertical-align: top; 
         }
@@ -20,13 +43,13 @@
         h1 {
             text-align: center;
             font-size: 48px;
-            color: var(--accent-color);
+            color: var(--primary-color);
             font-weight: bold;
         }
         p {
             text-align: center;
             font-size: 24px;
-            color: var(--accent-color);
+            color: var(--primary-colorr);
             font-weight: bold;
         }
 
@@ -35,32 +58,50 @@
             display: flex;
             justify-content: space-between;
             align-items: center;
-            padding: 40px;
-            background-color: var(--nav-bg-color);
-            width: 100%;
+            margin:  0 auto;
+            height: 10vh;
+            background-color: var(--primary-color);
+            
+            
         }
-        nav a {
-            color: var(--nav-link-color);
+        #left-nav {
+            margin-left: 2%;
             text-decoration: none;
-            font-size: large;
-        }
-        nav div {
-            display: flex;
-            justify-content: space-between;
-            width: 15%; /* Adjust this value as needed */
+          }
+          
+          #left-nav a {
+            color: var(--secondary-color);
+            margin-left: 10px;
+            margin-right: 10px;
+            text-decoration: none;
+          }
+          
+          #right-nav {
+            margin-right: 2%;
+       
+          }
+          
+        #right-nav a {
+            color: var(--secondary-color);
+            margin-left: 10px;
+            margin-right: 10px;
+            text-decoration: none;
+   
         }
 
         .image-container {
             position: relative;
+         
         }
 
         .text-over-image {
+            display: flex;
+            flex-direction: column;
             position: absolute;
             top: 20%;
             left: 30%;
             transform: translate(-50%, -50%);
-            color: var(--accent-color); /* Change as needed */
-            font-size: 30px; /* Change as needed */
+            font-size: 30px; 
         }
 
         /* Flexbox for main content */
@@ -70,20 +111,21 @@
             align-items: center;
             padding: 20px;
             padding-top: 0px;
-            background-color: var(--main-bg-color);
+            background-color: var( --secondary-color);
         }
 
-        /* Flexbox for table */
+        
         table {
             display: flex;
             flex-direction: column;
             align-items: center;
             margin-top: 20px;
-            border-collapse: separate;
             border-spacing: 20px;
+            width: 100%;
+            border-collapse: collapse;
         }
 
-        /* Flexbox for table rows */
+        
         tr {
             display: flex;
             justify-content: center;
@@ -91,7 +133,6 @@
             margin-bottom: 20px;
         }
 
-        /* Flexbox for table cells */
         td {
             display: flex;
             flex-direction: column;
@@ -107,129 +148,14 @@
             display: flex;
             justify-content: center;
             align-items: center;
-            background-color: var(--main-bg-color);
+            background-color: var( --secondary-color);
             padding: 10px;
-        }
-
-        .container {
-            display: flex;
-            flex-direction: column;
-            align-items: center;    
-        }
-=======
-
-    td{
-        
-        height: 200px;
-        text-align: center;
-        vertical-align: middle;
-        border: none;
-        font-weight: bold;
-        color: rgb(63,187,180);
-        font-size: 32px;
-        vertical-align: top; 
-    }
-
-    h1 {
-        text-align: center;
-        font-size: 48px;
-        color: rgb(63,187,180);
-        font-weight: bold;
-    }
-    p {
-        text-align: center;
-        font-size: 24px;
-        color: rgb(63,187,180);
-        font-weight: bold;
-    }
-
-            /* Flexbox for navigation bar */
-            nav {
-                display: flex;
-                justify-content: space-between;
-                align-items: center;
-                padding: 40px;
-                background-color: rgb(63,187,180);
-                width: 100%;
-
-
-            }
-            nav a {
-                color: white;
-                text-decoration: none;
-                font-size: large;
-
-
-            }
-            nav div {
-                display: flex;
-                justify-content: space-between;
-                width: 15%; /* Adjust this value as needed */
-            }
-
-            .image-container {
-                position: relative;
-            }
             
-            .text-over-image {
-                position: absolute;
-                top: 20%;
-                left: 30%;
-                transform: translate(-50%, -50%);
-                color: rgb(63,187,180); /* Change as needed */
-                font-size: 30px; /* Change as needed */
-            }
-            /* Flexbox for main content */
-            main {
-                display: flex;
-                flex-direction: column;
-                align-items: center;
-                padding: 20px;
-                padding-top: 0px;
-            }
-    
-            /* Flexbox for table */
-            table {
-                display: flex;
-                flex-direction: column;
-                align-items: center;
-                margin-top: 20px;
-                border-collapse: separate;
-                border-spacing: 20px;
-            }
+        }
 
-         
-    
-            /* Flexbox for table rows */
-            tr {
-                display: flex;
-                justify-content: center;
-                align-items: center;
-                margin-bottom: 20px;
-            }
-    
-            /* Flexbox for table cells */
-            td {
-                display: flex;
-                flex-direction: column;
-                justify-content: center;
-                align-items: center;
-                text-align: center;
-                margin: 0 10px;
-                padding: 10px;
-            }
-    
-            /* Flexbox for footer */
-            footer {
-                display: flex;
-                justify-content: center;
-                align-items: center;
-                background-color: white;
-                padding: 10px;
-            }
-            .container {
-                display: flex;
-                flex-direction: column;
-                align-items: center;
-            }
->>>>>>> 5a3129efc52977301b3f08cf360b377b65039e03
+        body {
+            color: var(--primary-color);
+            height: 90vh;
+            max-width: auto;
+            margin: 0% auto;
+        }
