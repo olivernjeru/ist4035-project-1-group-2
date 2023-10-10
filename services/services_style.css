@@ -1,11 +1,11 @@
 /* Reset point */
-* ,
+*,
 ::before,
 ::after {
-    margin: 0;
-    padding: 0;
-    box-sizing: border-box;
-    scroll-behavior: smooth;
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  scroll-behavior: smooth;
 }
 
 html,
@@ -15,27 +15,28 @@ body {
 
 /* Colors */
 :root {
-    --primary-color: #FF7E1D;
-    --secondary-color: #FFFFFF;
+  --primary-color: #ff7e1d;
+  --secondary-color: #ffffff;
 }
 
 /* Custom Scrollbar */
 ::-webkit-scrollbar {
-    width: 5px;
-  }
+  width: 5px;
+}
 
-  ::-webkit-scrollbar-track {
-    background-color: var(--secondary-color);
-  }
+::-webkit-scrollbar-track {
+  background-color: var(--secondary-color);
+}
 
-  ::-webkit-scrollbar-thumb {
-    border: 8px solid var(--primary-color);
-    border-radius: 50px;
-  }
+::-webkit-scrollbar-thumb {
+  border: 8px solid var(--primary-color);
+  border-radius: 50px;
+}
 
 header,
 body {
-  font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+  font-family: system-ui, -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto,
+    Oxygen, Ubuntu, Cantarell, "Open Sans", "Helvetica Neue", sans-serif;
 }
 
 a {
@@ -133,180 +134,3 @@ footer {
   text-align: center;
   bottom: 10;
 }
-
-
-/* Reset point */
-/* *,
-::before,
-::after {
-  margin: 0;
-  padding: 0;
-  box-sizing: border-box;
-  scroll-behavior: smooth;
-}
-
-html,
-body {
-  height: 100%;
-} */
-
-/* Colors */
-/* :root {
-  --primary-color: rgb(63, 187, 180);
-  --secondary-color: #ffffff;
-} */
-
-/* Custom Scrollbar */
-/* ::-webkit-scrollbar {
-  width: 5px;
-}
-
-::-webkit-scrollbar-track {
-  background-color: var(--secondary-color);
-}
-
-::-webkit-scrollbar-thumb {
-  border: 8px solid var(--primary-color);
-  border-radius: 50px;
-}
-
-header,
-body {
-  font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
-}
-
-a {
-  text-decoration: none;
-} */
-
-/* Flexbox for navigation bar */
-/* nav {
-  display: flex;
-  justify-content: space-between;
-  align-items: center;
-  margin: 0 auto;
-  height: 10vh;
-  background-color: var(--primary-color);
-}
-
-#left-nav {
-  margin-left: 2%;
-}
-
-#left-nav a {
-  color: var(--secondary-color);
-}
-
-#right-nav {
-  margin-right: 2%;
-}
-
-#right-nav a {
-  color: var(--secondary-color);
-}
-
-body {
-  max-width: 80%;
-  margin: 0% auto;
-  color: var(--primary-color);
-} */
-
-/* #services-body-content {
-  background-image: url(../assets/background-images/services.png);
-  background-position: center;
-  background-repeat: no-repeat;
-  background-size: cover;
-  height: 90vh;
-  width: 100%;
-}
-
-td {
-  height: 200px;
-  text-align: center;
-  vertical-align: middle;
-  border: none;
-  font-weight: bold;
-  color: var(--primary-color);
-  font-size: 32px;
-  vertical-align: top;
-}
-
-h1 {
-  text-align: center;
-  font-size: 48px;
-  color: var(--primary-color);
-  font-weight: bold;
-}
-p {
-  text-align: center;
-  font-size: 24px;
-  color: var(--primary-colorr);
-  font-weight: bold;
-} */
-
-/* .image-container {
-  position: relative;
-}
-
-.text-over-image {
-  display: flex;
-  flex-direction: column;
-  position: absolute;
-  top: 20%;
-  left: 30%;
-  transform: translate(-50%, -50%);
-  font-size: 30px;
-} */
-
-/* Flexbox for main content */
-/* main {
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  padding: 20px;
-  padding-top: 0px;
-  background-color: var(--secondary-color);
-}
-
-table {
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  margin-top: 20px;
-  border-spacing: 20px;
-  width: 100%;
-  border-collapse: collapse;
-}
-
-tr {
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  margin-bottom: 20px;
-} */
-
-/* td {
-  display: flex;
-  flex-direction: column;
-  justify-content: center;
-  align-items: center;
-  text-align: center;
-  margin: 0 10px;
-  padding: 10px;
-} */
-
-/* Flexbox for footer */
-/* footer {
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  background-color: var(--secondary-color);
-  padding: 10px;
-}
-
-body {
-  color: var(--primary-color);
-  height: 90vh;
-  max-width: auto;
-  margin: 0% auto;
-} */

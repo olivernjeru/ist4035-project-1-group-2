@@ -1,11 +1,11 @@
 /* Reset point */
-* ,
+*,
 ::before,
 ::after {
-    margin: 0;
-    padding: 0;
-    box-sizing: border-box;
-    scroll-behavior: smooth;
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  scroll-behavior: smooth;
 }
 
 html,
@@ -15,27 +15,28 @@ body {
 
 /* Colors */
 :root {
-    --primary-color: #FF7E1D;
-    --secondary-color: #FFFFFF;
+  --primary-color: #ff7e1d;
+  --secondary-color: #ffffff;
 }
 
 /* Custom Scrollbar */
 ::-webkit-scrollbar {
-    width: 5px;
-  }
+  width: 5px;
+}
 
-  ::-webkit-scrollbar-track {
-    background-color: var(--secondary-color);
-  }
+::-webkit-scrollbar-track {
+  background-color: var(--secondary-color);
+}
 
-  ::-webkit-scrollbar-thumb {
-    border: 8px solid var(--primary-color);
-    border-radius: 50px;
-  }
+::-webkit-scrollbar-thumb {
+  border: 8px solid var(--primary-color);
+  border-radius: 50px;
+}
 
 header,
 body {
-  font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+  font-family: system-ui, -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto,
+    Oxygen, Ubuntu, Cantarell, "Open Sans", "Helvetica Neue", sans-serif;
 }
 
 a {
