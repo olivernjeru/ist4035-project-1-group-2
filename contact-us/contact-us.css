@@ -130,8 +130,9 @@ button {
   cursor: pointer;
 }
 
-#prefer-email {
+#email-preference {
   display: flex;
+  justify-content: center;
 }
 
 #text-black {
@@ -201,7 +202,7 @@ footer {
     padding: 10px; /* Reduced padding for mobile */
   }
 
-  #prefer-email {
+  #email-preference {
     flex-direction: column; /* Stack text and email address vertically */
     align-items: center; /* Center content */
   }
