@@ -43,6 +43,25 @@ a {
   text-decoration: none;
 }
 
+#menu-icon {
+  display: none;
+  cursor: pointer;
+  font-size: 24px;
+  color: var(--secondary-color);
+}
+
+#menu-toggle:checked + #menu-icon {
+  display: block;
+}
+
+#menu-toggle {
+  display: none;
+}
+
+#menu-toggle:checked ~ #right-nav {
+  display: block;
+}
+
 nav {
   display: flex;
   justify-content: space-between;
@@ -76,62 +95,192 @@ body {
 }
 
 #contact-us-body-content {
-    display: flex;
-    box-shadow: 0 0 10px rgba(0, 0, 0, 0.2);
+  display: flex;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.2);
 }
 
 #contact-us-form {
-    flex: 1;
-    padding: 20px;
+  flex: 1;
+  padding: 20px;
 }
 
 form {
-    max-width: 500px;
-    /* margin: 0 auto; */
-    padding: 20px;
+  max-width: 500px;
+  /* margin: 0 auto; */
+  padding: 20px;
 }
 
 input[type="text"],
 input[type="email"],
 textarea,
 button {
-    display: block;
-    width: 100%;
-    margin-bottom: 30px;
-    padding: 20px;
-    border: 1px solid #ccc;
-    border-radius: 5px;
-    font-size: 16px;
+  display: block;
+  width: 100%;
+  margin-bottom: 30px;
+  padding: 20px;
+  border: 1px solid #ccc;
+  border-radius: 5px;
+  font-size: 16px;
 }
 
 button {
-    background:var(--primary-color);
-    color: #fff;
-    border: none;
-    cursor: pointer;
+  background: var(--primary-color);
+  color: #fff;
+  border: none;
+  cursor: pointer;
 }
 
 #prefer-email {
-    display: flex;
+  display: flex;
 }
 
 #text-black {
-    color: #000;
+  color: #000;
 }
 
 #telephone-image {
-    flex: 1;
-    background-image: url('../assets/background-images/contact-us.jpg');
-    background-size: cover;
-    background-repeat: no-repeat;
-    background-position: center;
-    height: 90vh;
-    width: 100%;
+  flex: 1;
+  background-image: url("../assets/background-images/contact-us.jpg");
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: center;
+  height: 90vh;
+  width: 100%;
 }
 
 footer {
-    position: absolute;
-    transform: translate(-50%, -50%);
-    left: 50%;
-    bottom: 0;
+  position: absolute;
+  transform: translate(-50%, -50%);
+  left: 50%;
+  bottom: 0;
+}
+
+/* Mobile Styles */
+@media (max-width: 767px) {
+  nav {
+    flex-direction: column;
+    align-items: flex-start;
+    height: auto;
   }
+
+  #left-nav,
+  #right-nav {
+    width: 100%;
+    text-align: center;
+  }
+
+  #right-nav {
+    position: static;
+    display: none;
+  }
+
+  #menu-icon {
+    display: block;
+  }
+
+  #contact-us-body-content {
+    flex-direction: column; /* Stack content vertically */
+    height: 100%;
+  }
+
+  #contact-us-form {
+    padding: 20px;
+  }
+
+  form {
+    max-width: 100%; /* Adjusted for mobile screens */
+    margin: 0 auto;
+    padding: 20px;
+  }
+
+  input[type="text"],
+  input[type="email"],
+  textarea,
+  button {
+    margin-bottom: 20px; /* Reduced spacing for mobile */
+    padding: 10px; /* Reduced padding for mobile */
+  }
+
+  #prefer-email {
+    flex-direction: column; /* Stack text and email address vertically */
+    align-items: center; /* Center content */
+  }
+
+  #telephone-image {
+    height: auto; /* Allow image to resize based on content */
+    background-size: contain; /* Fit image within container */
+  }
+
+  footer {
+    /* position: static; Remove absolute positioning */
+    /* transform: none; Reset transform */
+    /* left: auto; Reset left positioning */
+    /* bottom: auto; Reset bottom positioning */
+  }
+}
+
+/* Mobile Styles */
+@media (max-width: 465px) {
+  nav {
+    flex-direction: column;
+    align-items: flex-start;
+    height: auto;
+  }
+
+  #left-nav,
+  #right-nav {
+    width: 100%;
+    text-align: center;
+  }
+
+  #right-nav {
+    position: static;
+    display: none;
+  }
+
+  #menu-icon {
+    display: block;
+  }
+
+  body {
+    max-width: 90%;
+  }
+
+  #contact-us-body-content {
+    flex-direction: column; /* Stack content vertically */
+    height: 100%;
+  }
+
+  #contact-us-form {
+    padding: 20px;
+  }
+
+  form {
+    max-width: 100%; /* Adjusted for mobile screens */
+    margin: 0 auto;
+    padding: 20px;
+  }
+
+  input[type="text"],
+  input[type="email"],
+  textarea,
+  button {
+    margin-bottom: 20px; /* Reduced spacing for mobile */
+    padding: 10px; /* Reduced padding for mobile */
+  }
+
+  #prefer-email {
+    flex-direction: column; /* Stack text and email address vertically */
+    align-items: center; /* Center content */
+  }
+
+  #telephone-image {
+    display: none;
+  }
+
+  #email-preference,
+  footer {
+    text-align: center;
+    font-size: 15px;
+  }
+}
