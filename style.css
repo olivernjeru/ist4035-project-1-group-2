@@ -76,7 +76,7 @@ body {
 
 #landing-page-main-content {
   background-image: url("assets/background-images/landing-page.jpg");
-  /* background-repeat: no-repeat; */
+  background-repeat: no-repeat;
   background-size: cover;
   background-position: center;
   height: 90vh;
