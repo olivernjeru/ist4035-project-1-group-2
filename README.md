@@ -47,3 +47,15 @@ A zipped file containing your HTML files, CSS, and images.
 - Website Synergy ………………………. 4 marks
 
 - Total …………………………………… 20 marks
+
+## Due Date
+
+Thursday, October 12, 2023 11:59:00 PM EAT
+
+## Points Possible
+
+20
+
+## Group Name
+
+Group 02
