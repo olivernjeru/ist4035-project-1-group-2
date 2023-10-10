@@ -1,5 +1,142 @@
 /* Reset point */
-*,
+* ,
+::before,
+::after {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    scroll-behavior: smooth;
+}
+
+html,
+body {
+  height: 100%;
+}
+
+/* Colors */
+:root {
+    --primary-color: #FF7E1D;
+    --secondary-color: #FFFFFF;
+}
+
+/* Custom Scrollbar */
+::-webkit-scrollbar {
+    width: 5px;
+  }
+
+  ::-webkit-scrollbar-track {
+    background-color: var(--secondary-color);
+  }
+
+  ::-webkit-scrollbar-thumb {
+    border: 8px solid var(--primary-color);
+    border-radius: 50px;
+  }
+
+header,
+body {
+  font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+}
+
+a {
+  text-decoration: none;
+}
+
+nav {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  height: 10vh;
+  margin: 0 auto;
+  background-color: var(--primary-color);
+}
+
+#left-nav {
+  margin-left: 2%;
+}
+
+#left-nav a {
+  color: var(--secondary-color);
+}
+
+#right-nav {
+  margin-right: 2%;
+}
+
+#right-nav a {
+  color: var(--secondary-color);
+}
+
+body {
+  height: 90vh;
+  max-width: 80%;
+  margin: 0% auto;
+  color: var(--primary-color);
+}
+
+#landing-page-main-content {
+  background-image: url("../assets/background-images/services.png");
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center;
+  height: 90vh;
+}
+
+#welcome-message {
+  position: relative;
+  top: 16%;
+  left: 5%;
+}
+
+#welcome-message p {
+  font-size: 23px;
+}
+
+#our-services-content {
+  height: 100vh;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.2);
+}
+
+#intro-message {
+  padding: 2% 0% 1% 0%;
+  display: flex;
+  flex-direction: column;
+  text-align: center;
+}
+
+#intro-message h1 {
+  padding: 0% 0% 1% 0%;
+}
+
+#intro-message p {
+  font-size: 22px;
+}
+
+#services-grid-display {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  gap: 5rem;
+  margin-top: 5%;
+  margin-bottom: 12%;
+  margin-left: 15%;
+  align-items: center;
+}
+
+.service {
+  display: flex;
+  align-items: center;
+  text-align: center;
+}
+
+footer {
+  position: relative;
+  text-align: center;
+  bottom: 10;
+}
+
+
+/* Reset point */
+/* *,
 ::before,
 ::after {
   margin: 0;
@@ -11,16 +148,16 @@
 html,
 body {
   height: 100%;
-}
+} */
 
 /* Colors */
-:root {
+/* :root {
   --primary-color: rgb(63, 187, 180);
   --secondary-color: #ffffff;
-}
+} */
 
 /* Custom Scrollbar */
-::-webkit-scrollbar {
+/* ::-webkit-scrollbar {
   width: 5px;
 }
 
@@ -40,10 +177,10 @@ body {
 
 a {
   text-decoration: none;
-}
+} */
 
 /* Flexbox for navigation bar */
-nav {
+/* nav {
   display: flex;
   justify-content: space-between;
   align-items: center;
@@ -72,9 +209,9 @@ body {
   max-width: 80%;
   margin: 0% auto;
   color: var(--primary-color);
-}
+} */
 
-#services-body-content {
+/* #services-body-content {
   background-image: url(../assets/background-images/services.png);
   background-position: center;
   background-repeat: no-repeat;
@@ -105,9 +242,9 @@ p {
   font-size: 24px;
   color: var(--primary-colorr);
   font-weight: bold;
-}
+} */
 
-.image-container {
+/* .image-container {
   position: relative;
 }
 
@@ -119,10 +256,10 @@ p {
   left: 30%;
   transform: translate(-50%, -50%);
   font-size: 30px;
-}
+} */
 
 /* Flexbox for main content */
-main {
+/* main {
   display: flex;
   flex-direction: column;
   align-items: center;
@@ -146,9 +283,9 @@ tr {
   justify-content: center;
   align-items: center;
   margin-bottom: 20px;
-}
+} */
 
-td {
+/* td {
   display: flex;
   flex-direction: column;
   justify-content: center;
@@ -156,10 +293,10 @@ td {
   text-align: center;
   margin: 0 10px;
   padding: 10px;
-}
+} */
 
 /* Flexbox for footer */
-footer {
+/* footer {
   display: flex;
   justify-content: center;
   align-items: center;
@@ -172,4 +309,4 @@ body {
   height: 90vh;
   max-width: auto;
   margin: 0% auto;
-}
+} */
