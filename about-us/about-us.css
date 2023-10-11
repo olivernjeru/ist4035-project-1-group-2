@@ -43,11 +43,6 @@ a {
   text-decoration: none;
 }
 
-img {
-  height: 100%;
-  width: 100%;
-}
-
 nav {
   display: flex;
   justify-content: space-between;
@@ -55,6 +50,10 @@ nav {
   height: 10vh;
   margin: 0 auto;
   background-color: var(--primary-color);
+}
+
+#nav-icons {
+  display: none;
 }
 
 #left-nav {
@@ -100,8 +99,9 @@ body {
 }
 
 #mission-and-certified-coaches {
+  color: var(--secondary-color);
   height: 100vh;
-  background-color: #000;
+  background-color: var(--primary-color);
 }
 
 #mission,
@@ -120,9 +120,10 @@ body {
 }
 
 #our-team {
-  box-shadow: 0 0 10px rgba(0, 0, 0, 0.2);
   height: 100vh;
   text-align: center;
+  background-color: var(--primary-color);
+  color: var(--secondary-color);
 }
 
 #our-team h1 {
@@ -136,17 +137,22 @@ body {
   gap: 3rem;
 }
 
+#team img {
+  height: 100%;
+  width: 100%;
+}
+
 #coo,
 #ceo,
 #cto {
-    height: 70vh;
-    margin-bottom: 24%;
+  height: 70vh;
+  margin-bottom: 24%;
 }
 
 #coo:hover,
 #ceo:hover,
 #cto:hover {
-    cursor: pointer;
+  cursor: pointer;
 }
 
 .title {
@@ -160,4 +166,83 @@ body {
 footer {
   position: relative;
   text-align: center;
+}
+
+@media (max-width: 465px) {
+  nav {
+    position: sticky;
+  }
+
+  #nav-icons {
+    display: flex;
+    align-items: center;
+  }
+
+  #nav-icons a {
+    margin: 0 16%;
+  }
+
+  #left-nav,
+  #right-nav {
+    display: none;
+  }
+
+  body {
+    color: var(--primary-color);
+    max-width: 100%;
+  }
+
+  #about-us-page-main-content {
+    background-image: url(../assets/background-images/mobile/about-us.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+    height: 90vh;
+  }
+
+  #welcome-message {
+    top: 15%;
+    left: 5%;
+    width: 80%;
+  }
+
+  #welcome-message p {
+    font-size: 24px;
+  }
+
+  #mission,
+#certified-coaches {
+  padding: 4% 0% 2% 0%;
+  height: 40vh;
+}
+
+#mission p,
+#certified-coaches p {
+  margin: 15% 20%;
+}
+
+#our-team {
+  height: 190vh;
+}
+
+#our-team h1 {
+  padding: 3% 0%;
+}
+
+#team {
+  margin: 2% 6%;
+  display: grid;
+  grid-template-columns: repeat(1, 1fr);
+  gap: 1rem;
+}
+
+#coo,
+#ceo,
+#cto {
+  height: 50vh;
+}
+
+  footer {
+    font-size: 20px;
+  }
 }
