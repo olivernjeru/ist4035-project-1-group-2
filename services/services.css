@@ -190,16 +190,15 @@ footer {
   }
 
   #services-grid-display {
-    display: grid;
     grid-template-columns: repeat(1, 1fr);
     gap: 3rem;
-    margin-top: 5%;
-    margin-bottom: 12%;
-    margin-left: 15%;
-    align-items: center;
+  }
+
+  .description p {
+    font-size: 17px;
   }
 
   footer {
-    font-size: 15px;
+    font-size: 20px;
   }
 }
