@@ -52,6 +52,10 @@ nav {
   background-color: var(--primary-color);
 }
 
+#nav-icons {
+  display: none;
+}
+
 #left-nav {
   margin-left: 2%;
 }
@@ -75,7 +79,7 @@ body {
   color: var(--primary-color);
 }
 
-#landing-page-main-content {
+#services-page-main-content {
   background-image: url("../assets/background-images/services.png");
   background-repeat: no-repeat;
   background-size: cover;
@@ -133,4 +137,69 @@ footer {
   position: relative;
   text-align: center;
   bottom: 10;
+}
+
+@media (max-width: 465px) {
+  nav {
+    position: sticky;
+  }
+
+  #nav-icons {
+    display: flex;
+    align-items: center;
+  }
+
+  #nav-icons a {
+    margin: 0 16%;
+  }
+
+  #left-nav,
+  #right-nav {
+    display: none;
+  }
+
+  body {
+    color: var(--secondary-color);
+    max-width: 100%;
+  }
+
+  #services-page-main-content {
+    background-image: url(../assets/background-images/mobile/services.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+    height: 90vh;
+  }
+
+  #welcome-message {
+    position: relative;
+    top: 12%;
+    left: 5%;
+    width: 90%;
+  }
+
+  #welcome-message p {
+    font-size: 23px;
+  }
+
+  #our-services-content {
+    height: 100vh;
+    max-width: 100%;
+    color: var(--primary-color);
+    background-color: #000000;
+  }
+
+  #services-grid-display {
+    display: grid;
+    grid-template-columns: repeat(1, 1fr);
+    gap: 3rem;
+    margin-top: 5%;
+    margin-bottom: 12%;
+    margin-left: 15%;
+    align-items: center;
+  }
+
+  footer {
+    font-size: 15px;
+  }
 }
