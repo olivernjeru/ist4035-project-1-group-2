@@ -52,6 +52,10 @@ nav {
   background-color: var(--primary-color);
 }
 
+#nav-icons {
+  display: none;
+}
+
 #left-nav {
   margin-left: 2%;
 }
@@ -105,4 +109,46 @@ footer {
   transform: translate(-50%, -50%);
   left: 50%;
   bottom: 0;
+}
+
+@media (max-width: 465px) {
+  nav {
+    position: sticky;
+  }
+
+  #nav-icons {
+    display: flex;
+    align-items: center;
+  }
+
+  #nav-icons a {
+    margin: 0 16%;
+  }
+
+  #left-nav,
+  #right-nav {
+    display: none;
+  }
+
+  #landing-page-main-content {
+    background-image: url(assets/background-images/mobile/landing-page.jpg);
+  }
+
+  body {
+    color: var(--secondary-color);
+    max-width: 100%;
+  }
+
+  #welcome-message h1 {
+    font-size: 23px;
+  }
+
+  #welcome-message p {
+    font-size: 16px;
+  }
+
+  footer {
+    font-size: 15px;
+  }
+
 }
