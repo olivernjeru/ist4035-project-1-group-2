@@ -179,19 +179,21 @@ footer {
   }
 
   #welcome-message p {
-    font-size: 23px;
+    font-size: 20px;
   }
 
   #our-services-content {
-    height: 100vh;
+    height: 130vh;
     max-width: 100%;
     color: var(--primary-color);
     background-color: #000000;
+    padding: 0% 3%;
   }
 
   #services-grid-display {
     grid-template-columns: repeat(1, 1fr);
     gap: 3rem;
+    margin-left: 7%;
   }
 
   .description p {
