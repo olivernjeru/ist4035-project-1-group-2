@@ -1,0 +1,251 @@
+:root {
+  --primary-color: #ff7e1d;
+  --secondary-color: #000000;
+}
+
+html {
+	font-size:62.5%;
+}
+* {
+	margin: 0;
+	padding: 0;
+}
+ul, li {
+	list-style: none;
+}
+input {
+	border: none;
+}
+body {
+  width: 39.3rem;
+}
+.about-us-page {
+  width: 100%;
+  overflow: hidden;
+  position: relative;
+  align-items: center;
+  display: flex;
+  flex-direction: column;
+  background-color: var(--secondary-color);
+}
+.about-us-page .auto-group-1 {
+  box-sizing: border-box;
+  padding: 2rem 2rem 2.2rem 2rem;
+  width: 100%;
+  display: flex;
+  column-gap: 5.9rem;
+  align-items: center;
+  background-color: var(--primary-color);
+  flex-shrink: 0;
+}
+.about-us-page .auto-group-1 .cottage {
+  width: 4.4rem;
+  height: 4.4rem;
+  cursor: pointer;
+  position: relative;
+  object-fit: contain;
+  vertical-align: top;
+  flex-shrink: 0;
+}
+.about-us-page .auto-group-1 .concierge {
+  width: 4.4rem;
+  height: 4.4rem;
+  position: relative;
+  object-fit: contain;
+  vertical-align: top;
+  flex-shrink: 0;
+}
+.about-us-page .auto-group-1 .contact-page {
+  width: 4.4rem;
+  height: 4.4rem;
+  cursor: pointer;
+  position: relative;
+  object-fit: contain;
+  vertical-align: top;
+  flex-shrink: 0;
+}
+.about-us-page .auto-group-1 .feed {
+  width: 4.4rem;
+  height: 4.4rem;
+  cursor: pointer;
+  position: relative;
+  object-fit: contain;
+  vertical-align: top;
+  flex-shrink: 0;
+}
+.about-us-page .auto-group-2 {
+  box-sizing: border-box;
+  padding: 4.6rem 1.1rem 52.2rem 1.1rem;
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  background-size: 100% 100%;
+  background-repeat: no-repeat;
+  background-position: center;
+  background-image: url('assets/background-images/mobile/about-us.jpg');
+  flex-shrink: 0;
+}
+.about-us-page .auto-group-2 .about-us {
+  margin-bottom: 4.4rem;
+  font-size: 3rem;
+  font-weight: 700;
+  line-height: 1.2125;
+  color: var(--primary-color);
+  font-family: Inter, 'Source Sans Pro';
+  white-space: nowrap;
+  flex-shrink: 0;
+}
+.about-us-page .auto-group-2 .Paragraph-0
+ {
+  max-width: 32.3rem;
+  font-size: 2.4rem;
+  font-weight: 400;
+  line-height: 1.2125;
+  color: var(--primary-color);
+  font-family: Inter, 'Source Sans Pro';
+  flex-shrink: 0;
+}
+.about-us-page .auto-group-3 {
+  margin-bottom: 4rem;
+  box-sizing: border-box;
+  padding: 6.8rem 0.9rem 23.9rem 0.9rem;
+  width: 39.8rem;
+  background-size: 100% 100%;
+  background-repeat: no-repeat;
+  background-position: center;
+  background-image: url('assets/background-images/mobile/about-us-path.png');
+  flex-shrink: 0;
+}
+.about-us-page .auto-group-3 .our-mission {
+  margin-bottom: 3.1rem;
+  font-size: 3rem;
+  font-weight: 700;
+  line-height: 1.2125;
+  color: var(--primary-color);
+  font-family: Inter, 'Source Sans Pro';
+  white-space: nowrap;
+}
+.about-us-page .auto-group-3 .Paragraph-1 {
+  margin-bottom: 11.7rem;
+  max-width: 31.7rem;
+  font-size: 2.4rem;
+  font-weight: 400;
+  line-height: 1.2125;
+  color: var(--primary-color);
+  font-family: Inter, 'Source Sans Pro';
+}
+.about-us-page .auto-group-3 .auto-group-4 {
+  width: 32.8rem;
+  height: 27.2rem;
+  position: relative;
+}
+.about-us-page .auto-group-3 .auto-group-4 .Paragraph-2 {
+  width: 32.8rem;
+  height: 3.7rem;
+  position: absolute;
+  left: 0;
+  top: 0;
+  font-size: 3rem;
+  font-weight: 700;
+  line-height: 1.2125;
+  color: var(--primary-color);
+  font-family: Inter, 'Source Sans Pro';
+  white-space: nowrap;
+}
+.about-us-page .auto-group-3 .auto-group-4 .Paragraph-3_1 {
+  width: 31.9rem;
+  height: 24.3rem;
+  position: absolute;
+  left: 0;
+  top: 2.9rem;
+  font-size: 3.2rem;
+  font-weight: 400;
+  line-height: 1.2125;
+  color: var(--primary-color);
+  font-family: Inter, 'Source Sans Pro';
+}
+.about-us-page .auto-group-3 .auto-group-4 .Paragraph-3_1 .Paragraph-3_2 {
+}
+.about-us-page .auto-group-3 .auto-group-4 .Paragraph-3_1 .Paragraph-3_3 {
+  font-size: 2.4rem;
+  font-weight: 400;
+  line-height: 1.2125;
+  color: var(--primary-color);
+  font-family: Inter, 'Source Sans Pro';
+}
+.about-us-page .our-team {
+  margin-left: 0.1rem;
+  font-size: 3rem;
+  font-weight: 700;
+  line-height: 1.2125;
+  color: var(--primary-color);
+  font-family: Inter, 'Source Sans Pro';
+  white-space: nowrap;
+  flex-shrink: 0;
+}
+.about-us-page .auto-group-5 {
+  box-sizing: border-box;
+  padding: 3.9rem 6.6rem 3.6rem 6.6rem;
+  width: 100%;
+  align-items: center;
+  display: flex;
+  flex-direction: column;
+  flex-shrink: 0;
+}
+.about-us-page .auto-group-5 .picture1 {
+  margin-bottom: 1.8rem;
+  width: 26.1rem;
+  height: 37.8rem;
+  object-fit: cover;
+  vertical-align: top;
+  border-radius: 0.5rem;
+  flex-shrink: 0;
+}
+.about-us-page .auto-group-5 .ceo{
+  margin: 0rem 0.8rem 7.5rem 0rem;
+  font-size: 2.4rem;
+  font-weight: 400;
+  line-height: 1.2125;
+  color: var(--primary-color);
+  font-family: Inter, 'Source Sans Pro';
+  white-space: nowrap;
+  flex-shrink: 0;
+}
+.about-us-page .auto-group-5 .picture2{
+  margin-bottom: 1.6rem;
+  width: 26.1rem;
+  height: 37.9rem;
+  object-fit: cover;
+  vertical-align: top;
+  border-radius: 0.5rem;
+  flex-shrink: 0;
+}
+.about-us-page .auto-group-5 .coo {
+  margin: 0rem 0.8rem 8.9rem 0rem;
+  font-size: 2.4rem;
+  font-weight: 400;
+  line-height: 1.2125;
+  color: var(--primary-color);
+  font-family: Inter, 'Source Sans Pro';
+  white-space: nowrap;
+  flex-shrink: 0;
+}
+.about-us-page .auto-group-5 .picture3 {
+  margin-bottom: 1.8rem;
+  width: 26.1rem;
+  height: 37.9rem;
+  object-fit: cover;
+  vertical-align: top;
+  border-radius: 0.5rem;
+  flex-shrink: 0;
+}
+.about-us-page .auto-group-5 .cto{
+  margin-right: 1.2rem;
+  font-size: 2.4rem;
+  font-weight: 400;
+  line-height: 1.2125;
+  color: var(--primary-color);
+  font-family: Inter, 'Source Sans Pro';
+  white-space: nowrap;
+  flex-shrink: 0;
+}
