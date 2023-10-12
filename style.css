@@ -1,11 +1,11 @@
 /* Reset point */
-* ,
+*,
 ::before,
 ::after {
-    margin: 0;
-    padding: 0;
-    box-sizing: border-box;
-    scroll-behavior: smooth;
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  scroll-behavior: smooth;
 }
 
 html,
@@ -15,27 +15,29 @@ body {
 
 /* Colors */
 :root {
-    --primary-color: #FF7E1D;
-    --secondary-color: #FFFFFF;
+  --primary-color: #68C37C;
+  --secondary-color: #ffffff;
+  --tertiary-color: #000000;
 }
 
 /* Custom Scrollbar */
 ::-webkit-scrollbar {
-    width: 5px;
-  }
+  width: 5px;
+}
 
-  ::-webkit-scrollbar-track {
-    background-color: var(--secondary-color);
-  }
+::-webkit-scrollbar-track {
+  background-color: var(--secondary-color);
+}
 
-  ::-webkit-scrollbar-thumb {
-    border: 8px solid var(--primary-color);
-    border-radius: 50px;
-  }
+::-webkit-scrollbar-thumb {
+  border: 8px solid var(--primary-color);
+  border-radius: 50px;
+}
 
 header,
 body {
-  font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+  font-family: system-ui, -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto,
+    Oxygen, Ubuntu, Cantarell, "Open Sans", "Helvetica Neue", sans-serif;
 }
 
 a {
@@ -51,6 +53,10 @@ nav {
   background-color: var(--primary-color);
 }
 
+#nav-icons {
+  display: none;
+}
+
 #left-nav {
   margin-left: 2%;
 }
@@ -60,11 +66,12 @@ nav {
 }
 
 #right-nav {
-  margin-right: 2%;
+  width: 25%;
 }
 
 #right-nav a {
   color: var(--secondary-color);
+  margin: 0% 3%;
 }
 
 body {
@@ -104,4 +111,46 @@ footer {
   transform: translate(-50%, -50%);
   left: 50%;
   bottom: 0;
+}
+
+@media (max-width: 465px) {
+  nav {
+    position: sticky;
+  }
+
+  #nav-icons {
+    display: flex;
+    align-items: center;
+  }
+
+  #nav-icons a {
+    margin: 0 16%;
+  }
+
+  #left-nav,
+  #right-nav {
+    display: none;
+  }
+
+  #landing-page-main-content {
+    background-image: url(assets/background-images/mobile/landing-page.jpg);
+  }
+
+  body {
+    color: var(--secondary-color);
+    max-width: 100%;
+  }
+
+  #welcome-message h1 {
+    font-size: 23px;
+  }
+
+  #welcome-message p {
+    font-size: 16px;
+  }
+
+  footer {
+    font-size: 16px;
+  }
+
 }

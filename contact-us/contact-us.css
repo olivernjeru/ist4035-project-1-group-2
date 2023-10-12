@@ -15,8 +15,9 @@ body {
 
 /* Colors */
 :root {
-  --primary-color: #ff7e1d;
+  --primary-color: #68C37C;
   --secondary-color: #ffffff;
+  --tertiary-color: #000000;
 }
 
 /* Custom Scrollbar */
@@ -43,25 +44,6 @@ a {
   text-decoration: none;
 }
 
-#menu-icon {
-  display: none;
-  cursor: pointer;
-  font-size: 24px;
-  color: var(--secondary-color);
-}
-
-#menu-toggle:checked + #menu-icon {
-  display: block;
-}
-
-#menu-toggle {
-  display: none;
-}
-
-#menu-toggle:checked ~ #right-nav {
-  display: block;
-}
-
 nav {
   display: flex;
   justify-content: space-between;
@@ -69,6 +51,10 @@ nav {
   height: 10vh;
   margin: 0 auto;
   background-color: var(--primary-color);
+}
+
+#nav-icons {
+  display: none;
 }
 
 #left-nav {
@@ -80,11 +66,12 @@ nav {
 }
 
 #right-nav {
-  margin-right: 2%;
+  width: 25%;
 }
 
 #right-nav a {
   color: var(--secondary-color);
+  margin: 0% 3%;
 }
 
 body {
@@ -130,12 +117,13 @@ button {
   cursor: pointer;
 }
 
-#prefer-email {
+#email-preference {
   display: flex;
+  justify-content: center;
 }
 
 #text-black {
-  color: #000;
+  color: var(--tertiary-color);
 }
 
 #telephone-image {
@@ -149,138 +137,95 @@ button {
 }
 
 footer {
-  position: absolute;
-  transform: translate(-50%, -50%);
-  left: 50%;
-  bottom: 0;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+  margin-top: -2%;
 }
 
-/* Mobile Styles */
-@media (max-width: 767px) {
+@media (max-width: 465px) {
   nav {
-    flex-direction: column;
-    align-items: flex-start;
-    height: auto;
+    position: sticky;
+  }
+
+  #nav-icons {
+    display: flex;
+    align-items: center;
+  }
+
+  #nav-icons a {
+    margin: 0 16%;
   }
 
   #left-nav,
   #right-nav {
-    width: 100%;
-    text-align: center;
-  }
-
-  #right-nav {
-    position: static;
     display: none;
-  }
-
-  #menu-icon {
-    display: block;
-  }
-
-  #contact-us-body-content {
-    flex-direction: column; /* Stack content vertically */
-    height: 100%;
   }
 
   #contact-us-form {
-    padding: 20px;
+    background-image: url(../assets/background-images/mobile/contact-us.jpg);
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center;
+    height: 90vh;
   }
 
   form {
-    max-width: 100%; /* Adjusted for mobile screens */
-    margin: 0 auto;
-    padding: 20px;
+    max-width: 100%;
+    /* margin: 0 auto; */
+    padding: 5px;
+  }
+
+  form h1 {
+    margin-top: 5%;
+  }
+
+  form p {
+    font-size: 21px;
+    margin-bottom: 4%;
   }
 
   input[type="text"],
-  input[type="email"],
-  textarea,
-  button {
-    margin-bottom: 20px; /* Reduced spacing for mobile */
-    padding: 10px; /* Reduced padding for mobile */
-  }
-
-  #prefer-email {
-    flex-direction: column; /* Stack text and email address vertically */
-    align-items: center; /* Center content */
-  }
-
-  #telephone-image {
-    height: auto; /* Allow image to resize based on content */
-    background-size: contain; /* Fit image within container */
-  }
-
-  footer {
-    /* position: static; Remove absolute positioning */
-    /* transform: none; Reset transform */
-    /* left: auto; Reset left positioning */
-    /* bottom: auto; Reset bottom positioning */
-  }
+input[type="email"],
+textarea,
+button {
+  display: block;
+  width: 100%;
+  margin-bottom: 31px;
+  padding: 20px;
+  border: 1px solid var(--primary-color);
+  border-radius: 5px;
+  font-size: 20px;
 }
 
-/* Mobile Styles */
-@media (max-width: 465px) {
-  nav {
-    flex-direction: column;
-    align-items: flex-start;
-    height: auto;
+  #email-preference p {
+    font-size: 16px;
   }
 
-  #left-nav,
-  #right-nav {
-    width: 100%;
-    text-align: center;
-  }
-
-  #right-nav {
-    position: static;
+  #text-black p {
     display: none;
   }
 
-  #menu-icon {
-    display: block;
+  #telephone-image {
+    display: none;
   }
 
   body {
-    max-width: 90%;
+    color: var(--secondary-color);
+    max-width: 100%;
   }
 
-  #contact-us-body-content {
-    flex-direction: column; /* Stack content vertically */
-    height: 100%;
+  #welcome-message h1 {
+    font-size: 23px;
   }
 
-  #contact-us-form {
-    padding: 20px;
+  #welcome-message p {
+    font-size: 16px;
   }
 
-  form {
-    max-width: 100%; /* Adjusted for mobile screens */
-    margin: 0 auto;
-    padding: 20px;
-  }
-
-  input[type="text"],
-  input[type="email"],
-  textarea,
-  button {
-    margin-bottom: 20px; /* Reduced spacing for mobile */
-    padding: 10px; /* Reduced padding for mobile */
-  }
-
-  #prefer-email {
-    flex-direction: column; /* Stack text and email address vertically */
-    align-items: center; /* Center content */
-  }
-
-  #telephone-image {
-    display: none;
-  }
-
-  #email-preference,
   footer {
-    text-align: center;
-    font-size: 15px;
+    font-size: 20px;
+    margin-top: -7%;
   }
 }
