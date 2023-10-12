@@ -15,8 +15,9 @@ body {
 
 /* Colors */
 :root {
-  --primary-color: #ff7e1d;
+  --primary-color: #68C37C;
   --secondary-color: #ffffff;
+  --tertiary-color: #000000;
 }
 
 /* Custom Scrollbar */
@@ -65,11 +66,12 @@ nav {
 }
 
 #right-nav {
-  margin-right: 2%;
+  width: 25%;
 }
 
 #right-nav a {
   color: var(--secondary-color);
+  margin: 0% 3%;
 }
 
 body {
@@ -99,7 +101,8 @@ body {
 
 #our-services-content {
   height: 100vh;
-  box-shadow: 0 0 10px rgba(0, 0, 0, 0.2);
+  background-color: var(--primary-color);
+  color: var(--secondary-color);
 }
 
 #intro-message {
@@ -185,8 +188,8 @@ footer {
   #our-services-content {
     height: 130vh;
     max-width: 100%;
-    color: var(--primary-color);
-    background-color: #000000;
+    color: var(--secondary-color);
+    background-color: var(--primary-color);
     padding: 0% 3%;
   }
 

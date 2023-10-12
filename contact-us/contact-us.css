@@ -15,8 +15,9 @@ body {
 
 /* Colors */
 :root {
-  --primary-color: #ff7e1d;
+  --primary-color: #68C37C;
   --secondary-color: #ffffff;
+  --tertiary-color: #000000;
 }
 
 /* Custom Scrollbar */
@@ -65,11 +66,12 @@ nav {
 }
 
 #right-nav {
-  margin-right: 2%;
+  width: 25%;
 }
 
 #right-nav a {
   color: var(--secondary-color);
+  margin: 0% 3%;
 }
 
 body {
@@ -121,7 +123,7 @@ button {
 }
 
 #text-black {
-  color: #000;
+  color: var(--tertiary-color);
 }
 
 #telephone-image {
